@@ -1,4 +1,0 @@
-/Users/gilee/CLionProjects/algo/cmake-build-debug/CMakeFiles/sort_0.dir
-/Users/gilee/CLionProjects/algo/cmake-build-debug/CMakeFiles/sort_1.dir
-/Users/gilee/CLionProjects/algo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/gilee/CLionProjects/algo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
