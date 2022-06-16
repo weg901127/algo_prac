@@ -1,7 +1,11 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-
+/*
+ *
+ * https://programmers.co.kr/learn/courses/30/lessons/42748
+ *
+ */
 using namespace std;
 
 vector<int> solution(vector<int> array, vector<vector<int>> commands) {
