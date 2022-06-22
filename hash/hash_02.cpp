@@ -4,30 +4,36 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <algorithm>
 using namespace std;
 
 bool solution(vector<string> phone_book) {
     bool answer = true;
     map<string, int> res;
-    for(auto x : phone_book)
-        res[x] = x.length();
+    for (auto x : phone_book)
+        res[x];
 
-    /*
+
+/*
     for(auto y : res)
         std::cout << y.first << " " << y.second << std::endl;
-    */
-    for (auto z : res) {
-        for (auto k = res.begin() ; k != res.end() ; k++) {
-            if (z.first != k->first && z.first.length() <= k->first.length() && k->first.find(z.first) == 0)
+*/
+    auto z = res.begin();
+    while (z != res.end()) {
+        int a = 2;
+        while (--a) {
+            auto k = z;
+            if (++k == res.end())
+                break;
+            if (k->first.find(z->first) == 0)
                 return false;
         }
+        z++;
     }
-    /*
-for (auto k : res) {
-    if (k.first.find(tmp.first) == 0)
-        return false;
-}
-}
-     */
     return answer;
+}
+
+
+int main() {
+    std::cout << solution({"123", "456", "789"}) << std::endl;
 }
